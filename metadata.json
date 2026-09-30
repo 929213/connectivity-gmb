@@ -1,0 +1,75 @@
+{
+  "title": {
+    "en": "Republic of the Gambia — Connectivity and Population",
+    "fr": "Republic of the Gambia — Connectivité et population"
+  },
+  "iso3": "GMB",
+  "country": "Republic of the Gambia",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "reference_period": "2026Q2",
+  "quarters_processed": [
+    "2026Q2",
+    "2026Q1",
+    "2025Q4",
+    "2025Q3",
+    "2025Q2",
+    "2025Q1",
+    "2024Q4",
+    "2024Q3",
+    "2024Q2"
+  ],
+  "services": [
+    "fixed",
+    "mobile"
+  ],
+  "admin_level": "ADM2",
+  "generated": "2026-09-30T10:07:43",
+  "sources": {
+    "ookla": {
+      "name": "Ookla Speedtest Open Data",
+      "licence": "CC BY-NC-SA 4.0",
+      "url": "https://github.com/teamookla/ookla-open-data",
+      "resolution": "Web Mercator z16 (~611 m at the equator)"
+    },
+    "worldpop": {
+      "name": "WorldPop 2025 1km",
+      "product": "Global 2 R2025A",
+      "release": "R2025A",
+      "is_projection": true,
+      "licence": "CC BY 4.0",
+      "url": "https://www.worldpop.org"
+    },
+    "geoboundaries": {
+      "name": "geoBoundaries gbOpen",
+      "licence": "CC BY 4.0",
+      "url": "https://www.geoboundaries.org"
+    }
+  },
+  "methods": {
+    "weighting": "population-weighted median; cell population shared equally among the tiles whose centroid falls in the cell",
+    "coverage": "share of population in 1 km cells containing >= 1 measured tile",
+    "thresholds_mbps": {
+      "broadband": 10,
+      "high_quality": 25
+    },
+    "settlement_density_thresholds": {
+      "urban": 1500,
+      "periurban": 300
+    }
+  },
+  "headline": {
+    "d_median_pop": 16.64788094788179,
+    "d_median_tile": 16.407,
+    "pct_above_bb": 65.6562589109399,
+    "pct_above_hi": 44.57363419472358,
+    "pop_coverage_pct": 20.822240465818613,
+    "area_coverage_pct": 0.8202449030359099,
+    "lat_median_pop": 20.0
+  },
+  "population_total": 2771797.027207041,
+  "connectivity_gini": 0.6145984067934718,
+  "licence_of_this_product": "CC BY-NC-SA 4.0 (inherited from Ookla, share-alike)"
+}
